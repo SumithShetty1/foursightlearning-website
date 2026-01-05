@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
+
+.team-section__container {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 60px 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Heading */
+.team-section__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-section__main-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team-section__underline {
+  width: 100px;
+  height: 4px;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Layout */
+.team-section__members {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Card */
+.team-section__member-card {
+  position: relative;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+/* Zig-zag layout */
+.team-section__card--up {
+  transform: translateY(-40px);
+}
+.team-section__card--down {
+  transform: translateY(40px);
+}
+
+/* Remove zigzag on smaller screens */
+@media (max-width: 768px) {
+  .team-section__card--up,
+  .team-section__card--down {
+    transform: translateY(0);
+  }
+}
+
+/* Image + Overlay */
+.team-section__image {
+  position: relative;
+  width: 100%;
+  height: 380px;
+}
+
+.team-section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay for desktop hover */
+.team-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.team-section__overlay h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.team-section__overlay h5 {
+  font-size: 15px;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.team-section__overlay p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.team-section__social {
+  display: flex;
+  gap: 12px;
+}
+
+.team-section__social a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.team-section__social a:hover {
+  color: #61cdff;
+}
+
+/* Hover activates overlay on desktop */
+.team-section__member-card:hover .team-section__overlay {
+  opacity: 1;
+}
+
+/* Mobile: overlay always visible */
+@media (max-width: 768px) {
+  .team-section__overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+    position: static;
+    color: #fff;
+  }
+
+  .team-section__image {
+    height: auto;
+  }
+
+  .team-section__overlay p {
+    color: #f9f9f9;
+  }
+}
+
+/* Footer */
+.team-section__footer {
+  margin-top: 70px;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}

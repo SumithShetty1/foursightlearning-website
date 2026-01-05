@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.fs-ei-section {
+  background: #f5f8fc;
+  padding: 70px 8%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.fs-ei-header h2,
+.fs-ei-header p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.fs-ei-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.fs-ei-card {
+  flex: 1 1 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: left;
+  position: relative;
+}
+
+.fs-ei-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.fs-ei-icon {
+  font-size: 36px;
+  color: #0a74b1;
+  background: #e7f3fb;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.fs-ei-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0a74b1;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.fs-ei-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0a74b1;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+.fs-ei-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.fs-ei-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-ei-list li {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.fs-ei-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0a74b1;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ================= Scroll Animations ================= */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fs-ei-section { padding: 50px 6%; }
+  .fs-ei-card { text-align: center; }
+  .fs-ei-icon { margin: 0 auto 18px auto; }
+  .fs-ei-title::after { margin: 8px auto 0 auto; }
+}

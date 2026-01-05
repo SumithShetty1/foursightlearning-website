@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.corporate-sector-page,
+.room-details-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f8fafc;
+  padding: 80px 8%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Title */
+.room-title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #043927;
+}
+
+/* Image */
+.image-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.room-image {
+  width: 80%;
+  max-width: 1000px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.room-image:hover {
+  transform: scale(1.02);
+}
+
+/* Explore Button */
+.button-wrapper {
+  margin: 25px 0 50px;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #02a75a, #019e9d);
+  border: none;
+  color: white;
+  padding: 14px 38px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(2, 167, 90, 0.3);
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #019e9d, #02a75a);
+}
+
+/* Description */
+.room-description {
+  max-width: 950px;
+  margin: 0 auto 60px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #444;
+}
+
+.room-description p {
+  margin-bottom: 30px;
+}
+
+/* List of amenities (with checkmarks) */
+.room-amenities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.room-amenities-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.room-amenities-list .checkmark {
+  color: #02a75a;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Amenities Section */
+.amenities-section {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-top: 80px;
+}
+
+.amenities-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #043927;
+  margin-bottom: 40px;
+}
+
+.amenities-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.amenity-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8fdfb;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 210px;
+  box-shadow: 0 4px 12px rgba(2, 167, 90, 0.08);
+}
+
+.amenity-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(2, 167, 90, 0.15);
+}
+
+.amenity-icon-item .icon {
+  margin-bottom: 15px;
+}
+
+.amenity-icon-item .label {
+  font-weight: 500;
+  color: #043927;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .room-title {
+    font-size: 30px;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .room-description {
+    text-align: center;
+  }
+
+  .amenities-section {
+    padding: 40px 25px;
+  }
+
+  .amenities-icons-grid {
+    gap: 25px;
+  }
+}
