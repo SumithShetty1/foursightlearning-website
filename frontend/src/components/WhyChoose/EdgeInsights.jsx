@@ -23,10 +23,9 @@ const EdgeInsights = () => {
           </div>
           <h3 className="fs-ei-title">Our Edge</h3>
           <p className="fs-ei-text">
-            We provide end-to-end learning solutions globally — from professional training
-            and corporate consultancy to educational institution establishment and management.
-            Our comprehensive approach ensures sustainable growth and measurable impact across
-            all sectors we serve.
+            We bring together knowledge, experience, and innovation to ensure every
+            program is impactful. Our team leverages hands-on strategies that empower
+            sustainable, real-world growth.
           </p>
         </div>
 
@@ -36,11 +35,10 @@ const EdgeInsights = () => {
           </div>
           <h3 className="fs-ei-title">Key Insights</h3>
           <ul className="fs-ei-list">
-            <li>Global reach with local implementation expertise</li>
-            <li>Integrated training, consultancy, and institutional support</li>
-            <li>Focus on practical skills and employability outcomes</li>
-            <li>Research-driven educational tools and publications</li>
-            <li>Partnerships with educational and corporate entities worldwide</li>
+            <li>Blending global trends with local context</li>
+            <li>Hands-on, interactive learning experiences</li>
+            <li>Focus on both skills and mindset</li>
+            <li>Partnerships that enable long-term success</li>
           </ul>
         </div>
       </div>
