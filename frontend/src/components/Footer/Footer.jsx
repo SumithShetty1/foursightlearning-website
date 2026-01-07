@@ -17,6 +17,10 @@ const Footer = () => {
     scrollToSection(id);
   };
 
+  const whatsappNumber = "9148798244";
+  const whatsappMessage = "Hello FourSight Learning, I'd like to know more about your training programs.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <footer
       className="footer"
@@ -36,7 +40,7 @@ const Footer = () => {
             <FaWhatsapp aria-hidden="true" />
             <a
               className="contact-link"
-              href="https://wa.me/919148798244?text=Hi%2C%20Greetings%20from%20FoursightLearning"
+              href={whatsappUrl} 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -57,13 +61,13 @@ const Footer = () => {
         <div className="social-row">
           <p className="social-heading">Get In Touch</p>
           <div className="social-icons">
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="social-icon whatsapp">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="social-icon whatsapp">
               <FaWhatsapp />
             </a>
-            <a href="https://instagram.com/foursightlearning" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon instagram">
+            <a href="https://instagram.com/foursight_learning" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon instagram">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com/company/foursightlearning" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon linkedin">
+            <a href="https://www.linkedin.com/company/foursight-learning-private-limited/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon linkedin">
               <FaLinkedinIn />
             </a>
           </div>

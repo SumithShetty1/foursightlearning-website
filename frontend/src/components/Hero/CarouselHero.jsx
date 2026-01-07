@@ -39,17 +39,27 @@ const CarouselHero = () => {
     return () => clearInterval(interval);
   }, [currentSlide]);
 
+  const whatsappNumber = "9148798244";
+  const whatsappMessage = "Hello FourSight Learning, I'd like to know more about your training programs.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="carousel-hero-banner">
       {/* === Floating Social Media Icons === */}
       <div className="floating-social-icons">
-        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+         <a 
+          href={whatsappUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          title="Chat on WhatsApp"
+          className="whatsapp-icon"
+        >
           <FaWhatsapp />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <a href="https://instagram.com/foursight_learning" target="_blank" rel="noopener noreferrer" title="Instagram">
           <FaInstagram />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <a href="https://www.linkedin.com/company/foursight-learning-private-limited/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <FaLinkedinIn />
         </a>
       </div>

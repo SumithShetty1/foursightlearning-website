@@ -1,6 +1,5 @@
 import React from "react";
 import "../Contact/Contact.css";
-import { FaWhatsapp, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -64,36 +63,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-
-        {/* Map and Social Section */}
-        <div className="contact-info">
-          <div className="info-content">
-            <h3 className="info-title">Reach us at</h3>
-            <p className="info-text">
-              Have a question or feedback? Fill out the form below, and we'll get back to you within 24 hours.
-            </p>
-
-            <div className="map-container">
-              <iframe
-                title="Foursight Learning Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7715610266423!2d74.86006437599655!3d12.87980288742563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b29ac3d4e6f%3A0xb005f6e1cff07f96!2s2nd%20Floor%2C%20City%20Corporation%20Commercial%20Complex%2C%20Mallikatte%2C%20Kadri%2C%20Mangaluru%2C%20Karnataka%20575002!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                width="100%"
-                height="300"
-                style={{ border: 0, borderRadius: "8px" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-
-            <div className="address">
-              <p className="address-text">
-                <strong>Address:</strong> 2nd Floor, City Corporation Commercial Complex, 
-                Mallikatte, Kadri, Mangaluru - 575002
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
