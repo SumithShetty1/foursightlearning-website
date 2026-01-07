@@ -1,25 +1,14 @@
 import React from "react";
 import "./Footer.css";
 import bgImage from "../../images/BgImage.avif";
-import { FaWhatsapp, FaEnvelope, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
-  const handleAnchorClick = (e, id) => {
-    // Prevent default anchor jump and do smooth scroll instead
-    e.preventDefault();
-    scrollToSection(id);
-  };
-
   const whatsappNumber = "9148798244";
+  const callNumber = "9844762311"; // New call number
   const whatsappMessage = "Hello FourSight Learning, I'd like to know more about your training programs.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const callUrl = `tel:+91${callNumber}`;
 
   return (
     <footer
@@ -42,6 +31,17 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="contact-row">
           <div className="contact-item">
+            <FaPhoneAlt aria-hidden="true" />
+            <a
+              className="contact-link"
+              href={callUrl}
+              aria-label="Call"
+            >
+              +91 98447 62311
+            </a>
+          </div>
+
+          <div className="contact-item">
             <FaWhatsapp aria-hidden="true" />
             <a
               className="contact-link"
@@ -58,22 +58,6 @@ const Footer = () => {
             <FaEnvelope aria-hidden="true" />
             <a className="contact-link" href="mailto:info@foursightlearning.com" aria-label="Email">
               info@foursightlearning.com
-            </a>
-          </div>
-        </div>
-
-        {/* Social Media */}
-        <div className="social-row">
-          <p className="social-heading">Get In Touch</p>
-          <div className="social-icons">
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="social-icon whatsapp">
-              <FaWhatsapp />
-            </a>
-            <a href="https://instagram.com/foursight_learning" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon instagram">
-              <FaInstagram />
-            </a>
-            <a href="https://www.linkedin.com/company/foursight-learning-private-limited/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon linkedin">
-              <FaLinkedinIn />
             </a>
           </div>
         </div>

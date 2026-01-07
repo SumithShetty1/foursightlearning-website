@@ -62,6 +62,7 @@
   gap: 25px; /* increased spacing */
   margin-bottom: 25px; /* increased spacing */
   font-size: 16px;
+  align-items: center;
 }
 
 .contact-item {
