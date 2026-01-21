@@ -11,6 +11,7 @@ import {
   LuSlidersHorizontal,
   LuLeaf,
 } from "react-icons/lu";
+import { Helmet } from "react-helmet-async";
 
 
 const fadeInDown = {
@@ -70,13 +71,13 @@ const GovernmentSector = () => {
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
-    
+
     // Then scroll to this component
     setTimeout(() => {
       if (containerRef.current) {
-        containerRef.current.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start' 
+        containerRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
         });
       }
     }, 100);
@@ -84,14 +85,26 @@ const GovernmentSector = () => {
 
   return (
     <motion.div
-     ref={containerRef}
+      ref={containerRef}
       className="room-details-container"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
+      <Helmet>
+        <title>Government & Public Sector Services | FourSight Learning Private Limited</title>
+        <meta
+          name="description"
+          content="FourSight Learning Private Limited offers capacity building, digital literacy, professional ethics training, policy improvement, and sustainable development initiatives."
+        />
+        <link
+          rel="canonical"
+          href="https://www.foursightlearning.com/government"
+        />
+      </Helmet>
+
       <motion.h1 className="room-title" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInDown}>
-        GOVERNMENT & PUBLIC SECTOR
+        Government & Public Sector
       </motion.h1>
 
       <motion.div className="image-button-wrapper" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInDown}>
