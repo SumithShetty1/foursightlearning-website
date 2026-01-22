@@ -14,6 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
+    "@vercel/analytics": "^1.6.1",
     "aos": "^2.3.4",
     "dom": "^0.0.3",
     "framer-motion": "^12.23.24",
